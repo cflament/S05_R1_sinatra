@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>editer un potin</title>
+  </head>
+  <body>
+    <h1>edite le potin !</h1>
+    <p>Tu peux editer le potin via le formulaire ci-dessous :</p>
+    <form action='/gossips/:id/edit/' method='POST'>
+      editer l'auteur du potin :  <input type='text' name='gossip_author' value='<%= gossip.author%>'/><br/>
+      edite le contenu du potin : <input type='text' name='gossip_content' value='<%= gossip.content %>'/><br/>
+      id du potin : <input type='text' name='gossip_id' value='<%= params['id'] %>'/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
